@@ -1,11 +1,19 @@
 # config.py
-# API Keys - Replace with your own keys
-ABUSEIPDB_API_KEY = "your_abuseipdb_key_here"
-OTX_API_KEY = "your_otx_key_here"
+# API key configuration for threat intelligence sources
+
+import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
+
+# API Keys
+ABUSEIPDB_API_KEY = os.getenv("ABUSEIPDB_API_KEY")
+OTX_API_KEY = os.getenv("OTX_API_KEY")
 
 # API Endpoints
 ABUSEIPDB_URL = "https://api.abuseipdb.com/api/v2/check"
 OTX_URL = "https://otx.alienvault.com/api/v1/indicators"
 
-# Thresholds
-ABUSE_SCORE_THRESHOLD = 50  # 50점 이상이면 악성으로 판단
+# Threshold - IPs with abuse score above this are flagged as malicious
+ABUSE_SCORE_THRESHOLD = 50
