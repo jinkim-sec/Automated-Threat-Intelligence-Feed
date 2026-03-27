@@ -1,0 +1,6 @@
+indicator,type,source,score,verdict,country,isp,last_reported,checked_at
+185.220.101.1,IPv4,AbuseIPDB,100,MALICIOUS,DE,Frantech Solutions,2025-10-31,2025-11-01 14:23:01
+185.220.101.1,IPv4,AlienVault OTX,15,MALICIOUS,DE,N/A,N/A,2025-11-01 14:23:02
+8.8.8.8,IPv4,AbuseIPDB,0,CLEAN,US,Google LLC,N/A,2025-11-01 14:23:03
+8.8.8.8,IPv4,AlienVault OTX,0,CLEAN,US,N/A,N/A,2025-11-01 14:23:04
+malware.wicar.org,domain,AlienVault OTX,3,MALICIOUS,N/A,N/A,N/A,2025-11-01 14:23:05
